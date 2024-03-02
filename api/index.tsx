@@ -72,5 +72,7 @@ app.frame('/', (c) => {
   })
 })
 
+console.log("fdk:", JSON.stringify(fdk))
+
 export const GET = handle(app)
 export const POST = handle(app)
