@@ -1,6 +1,8 @@
 import { Button, Frog } from 'frog'
 import { handle } from 'frog/vercel'
 import { PinataFDK } from 'pinata-fdk'
+import dotenv from "dotenv"
+dotenv.config()
 
 // Uncomment to use Edge Runtime.
 // export const config = {
@@ -71,8 +73,6 @@ app.frame('/', (c) => {
     ],
   })
 })
-
-console.log("fdk:", JSON.stringify(fdk))
 
 export const GET = handle(app)
 export const POST = handle(app)
